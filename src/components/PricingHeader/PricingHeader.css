@@ -1,0 +1,22 @@
+/* TOGGLE BUTTON */
+.toggle {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 32px;
+   margin-top: 40px;
+}
+
+.btn--toggle {
+   background-color: transparent;
+   color: var(--color-text);
+}
+
+.btn--toggle-active {
+   color: var(--color-text);
+   border-color: var(--color-border);
+}
+
+.btn--toggle:not(.btn--toggle-active):hover {
+   border-color: var(--color-border);
+}

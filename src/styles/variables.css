@@ -1,0 +1,22 @@
+:root {
+   --color-primary: #4f46e5;
+   --color-primary-hover: #4338ca;
+   --color-text: #171717;
+   --color-muted: #525252;
+   --color-border: #e5e7eb;
+   --bg-light: #f9fafb;
+
+   --container-width: 1216px;
+}
+
+.container {
+   max-width: var(--container-width);
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+body {
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+   color: var(--color-text);
+   background-color: var(--bg-light);
+}

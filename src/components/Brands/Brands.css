@@ -1,0 +1,36 @@
+/* BRANDS */
+.brands {
+   padding: 60px 0;
+   overflow: hidden;
+}
+
+.brands__title {
+   text-align: center;
+   margin-bottom: 32px;
+   color: var(--color-muted);
+   font-size: 14px;
+}
+
+.brands__list {
+   display: flex;
+   align-items: center;
+   gap: 32px;
+   width: max-content;
+
+   animation: brands-scroll 40s linear infinite;
+}
+
+.brands__list img {
+   max-width: 170px;
+   cursor: pointer;
+}
+
+/* Анимация */
+@keyframes brands-scroll {
+   from {
+      transform: translateX(0);
+   }
+   to {
+      transform: translateX(-50%);
+   }
+}
