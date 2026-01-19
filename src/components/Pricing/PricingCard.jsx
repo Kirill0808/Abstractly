@@ -1,4 +1,5 @@
 import checkIcon from '../../assets/img/check-fill.png';
+import Button from '../Button/Button';
 
 export default function PricingCard({
    title,
@@ -32,9 +33,9 @@ export default function PricingCard({
             ))}
          </ul>
 
-         <button className={`btn ${popular ? 'btn--primary' : ''} pricing-card__btn`}>
+         <Button variant={popular ? 'primary' : 'secondary'} className="pricing-card__btn">
             Buy now
-         </button>
+         </Button>
       </article>
    );
 }

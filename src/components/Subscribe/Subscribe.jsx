@@ -1,5 +1,6 @@
 import checkIcon from '../../assets/img/check-fill.png';
 import subscribeImage from '../../assets/img/Image.jpg';
+import Button from '../Button/Button';
 import './Subscribe.css';
 
 export default function Subscribe() {
@@ -32,7 +33,10 @@ export default function Subscribe() {
 
                <form className="subscribe__form">
                   <input type="email" className="subscribe__input" placeholder="Enter your email" />
-                  <button className="btn btn--primary">Subscribe</button>
+
+                  <Button type="submit" variant="primary">
+                     Subscribe
+                  </Button>
                </form>
 
                <p className="subscribe__note">We only send you the best! No spam.</p>

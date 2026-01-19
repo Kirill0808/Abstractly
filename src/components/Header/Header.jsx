@@ -1,5 +1,6 @@
 import './Header.css';
 import logo from '../../assets/img/logo.png';
+import Button from '../Button/Button';
 
 export default function Header() {
    return (
@@ -30,12 +31,8 @@ export default function Header() {
             </nav>
 
             <div className="header__actions">
-               <a href="#" className="btn btn--secondary">
-                  Learn more
-               </a>
-               <a href="#" className="btn btn--primary">
-                  See pricing
-               </a>
+               <Button variant="secondary">Learn more</Button>
+               <Button variant="primary">See pricing</Button>
             </div>
          </div>
       </header>

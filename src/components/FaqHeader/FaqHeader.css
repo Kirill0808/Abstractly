@@ -1,0 +1,17 @@
+/* FAQ HEADER */
+.faq__header {
+   max-width: 640px;
+   margin: 0 auto 80px;
+   text-align: center;
+}
+
+.faq__title {
+   font-size: 48px;
+   font-weight: 700;
+   margin-bottom: 16px;
+}
+
+.faq__text {
+   font-size: 18px;
+   color: var(--color-muted);
+}

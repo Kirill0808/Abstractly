@@ -2,6 +2,7 @@ import phoneIcon from '../../assets/img/phone.png';
 import callIcon from '../../assets/img/call.png';
 import letterIcon from '../../assets/img/letter.png';
 import './Contact.css';
+import Button from '../Button/Button';
 
 export default function Contact() {
    return (
@@ -57,7 +58,9 @@ export default function Contact() {
                   <span className="contact-form__counter">0/500</span>
                </div>
 
-               <button className="btn btn--primary contact-form__btn">Submit</button>
+               <Button variant="primary" type="submit" className="contact-form__btn">
+                  Submit
+               </Button>
             </form>
          </div>
       </section>

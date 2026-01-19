@@ -16,21 +16,9 @@
    align-items: center;
    gap: 32px;
    width: max-content;
-
-   animation: brands-scroll 40s linear infinite;
 }
 
 .brands__list img {
    max-width: 170px;
    cursor: pointer;
-}
-
-/* Анимация */
-@keyframes brands-scroll {
-   from {
-      transform: translateX(0);
-   }
-   to {
-      transform: translateX(-50%);
-   }
 }

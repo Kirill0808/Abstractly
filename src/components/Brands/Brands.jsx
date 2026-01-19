@@ -1,3 +1,6 @@
+import Marquee from 'react-fast-marquee';
+import SectionLayout from '../layout/SectionLayout';
+
 import Logo1 from '../../assets/img/logo-1.png';
 import Logo2 from '../../assets/img/logo-2.png';
 import Logo3 from '../../assets/img/logo-3.png';
@@ -22,16 +25,15 @@ const brands = [
 
 const Brands = () => {
    return (
-      <section className="brands">
-         <p className="brands__title">Used by teams that you love</p>
-         <ul className="brands__list">
-            {[...brands, ...brands].map((brand, index) => (
-               <li key={index}>
+      <SectionLayout className="brands" title="Used by teams that you love" withContainer={false}>
+         <Marquee speed={40} pauseOnHover gradient={false}>
+            {brands.map((brand, index) => (
+               <div className="brands__item" key={index}>
                   <img src={brand.img} alt={brand.alt} />
-               </li>
+               </div>
             ))}
-         </ul>
-      </section>
+         </Marquee>
+      </SectionLayout>
    );
 };
 

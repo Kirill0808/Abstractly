@@ -1,9 +1,6 @@
-import { useState } from 'react';
 import './PricingHeader.css';
 
-export default function PricingHeader() {
-   const [active, setActive] = useState('monthly');
-
+export default function PricingHeader({ billingPeriod, onChange }) {
    return (
       <div className="designers__header">
          <span className="designers__label">Pricing Tiers</span>
@@ -15,17 +12,21 @@ export default function PricingHeader() {
 
          <div className="toggle">
             <button
-               className={`btn btn--toggle ${active === 'monthly' ? 'btn--toggle-active' : ''}`}
-               onClick={() => setActive('monthly')}
+               className={`btn btn--toggle ${
+                  billingPeriod === 'monthly' ? 'btn--toggle-active' : ''
+               }`}
+               onClick={() => onChange('monthly')}
             >
                Monthly
             </button>
 
             <button
-               className={`btn btn--toggle ${active === 'annually' ? 'btn--toggle-active' : ''}`}
-               onClick={() => setActive('annually')}
+               className={`btn btn--toggle ${
+                  billingPeriod === 'yearly' ? 'btn--toggle-active' : ''
+               }`}
+               onClick={() => onChange('yearly')}
             >
-               Annually
+               Yearly
             </button>
          </div>
       </div>

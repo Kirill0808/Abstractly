@@ -49,6 +49,10 @@
    border: 1px solid var(--color-border);
    border-radius: 8px;
    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+
+   display: flex;
+   flex-direction: column;
+   height: 100%;
 }
 
 .contact-form__row {
@@ -63,6 +67,7 @@
    flex-direction: column;
    gap: 8px;
    position: relative;
+   margin-bottom: 32px;
 }
 
 .contact-form__field label {
@@ -80,8 +85,8 @@
 }
 
 .contact-form__field textarea {
-   min-height: 120px;
    resize: none;
+   padding-bottom: 32px;
 }
 
 .contact-form__counter {
@@ -94,5 +99,5 @@
 
 .contact-form__btn {
    width: 100%;
-   margin-top: 40px;
+   margin-top: auto;
 }

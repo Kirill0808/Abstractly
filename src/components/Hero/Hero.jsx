@@ -1,5 +1,6 @@
 import HeroImg from '../../assets/img/Hero image.jpg';
 import './Hero.css';
+import Button from '../Button/Button';
 
 const Hero = () => {
    return (
@@ -16,12 +17,8 @@ const Hero = () => {
                </p>
 
                <div className="hero__buttons">
-                  <a href="#" className="btn btn--secondary">
-                     Learn more
-                  </a>
-                  <a href="#" className="btn btn--primary">
-                     See pricing
-                  </a>
+                  <Button variant="primary">Get started</Button>
+                  <Button variant="secondary">Learn more</Button>
                </div>
             </div>
 
