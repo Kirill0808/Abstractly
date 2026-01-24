@@ -1,34 +1,34 @@
-.designer__content {
+.content {
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 80px;
    align-items: stretch;
 }
 
-.designer__body {
+.body {
    display: flex;
    height: 100%;
 }
 
-.designer__image img {
+.image img {
    width: 100%;
    height: 100%;
    object-fit: cover;
    border-radius: 16px;
 }
 
-.designer__content--right .designer__body {
+.right .body {
    order: 1;
 }
 
-.designer__content--right .designer__image {
+.right .image {
    order: 2;
 }
 
-.designer__content--left .designer__image {
+.left .image {
    order: 1;
 }
 
-.designer__content--left .designer__body {
+.left .body {
    order: 2;
 }

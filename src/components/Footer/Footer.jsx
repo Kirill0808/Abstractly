@@ -3,20 +3,21 @@ import instagramIcon from '../../assets/img/instagram-line.png';
 import facebookIcon from '../../assets/img/facebook-box-line.png';
 import githubIcon from '../../assets/img/github-line.png';
 import twitterIcon from '../../assets/img/twitter-x-line.png';
-import './Footer.css';
+
+import styles from './Footer.module.css';
 
 export default function Footer() {
    return (
-      <footer className="footer">
-         <div className="container footer__inner">
-            <nav className="footer__nav">
+      <footer className={styles.footer}>
+         <div className={`container ${styles.inner}`}>
+            <nav className={styles.nav}>
                <a href="#">Features</a>
                <a href="#">Pricing</a>
                <a href="#">About us</a>
                <a href="#">Contact</a>
             </nav>
 
-            <ul className="footer__socials">
+            <ul className={styles.socials}>
                <li>
                   <a href="#">
                      <img src={youtubeIcon} alt="YouTube" />
@@ -44,7 +45,7 @@ export default function Footer() {
                </li>
             </ul>
 
-            <p className="footer__copy">© 2024 Abstractly, Inc. All rights reserved.</p>
+            <p className={styles.copy}>© 2024 Abstractly, Inc. All rights reserved.</p>
          </div>
       </footer>
    );

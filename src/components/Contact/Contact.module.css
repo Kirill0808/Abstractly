@@ -1,49 +1,49 @@
-/* CONTACT SECTION */
 .contact {
    padding: 96px 0;
 }
 
-.contact__inner {
+.inner {
    display: grid;
    grid-template-columns: 1fr 1.1fr;
    gap: 80px;
    align-items: start;
 }
 
-.contact__title {
+.title {
    font-size: 48px;
    margin-bottom: 16px;
 }
 
-.contact__text {
+.text {
    color: var(--color-text-muted);
    max-width: 420px;
    margin-bottom: 48px;
 }
 
-.contact__list {
+.list {
    display: flex;
    flex-direction: column;
    gap: 24px;
 }
 
-.contact__item {
+.item {
    display: flex;
    align-items: center;
    gap: 16px;
 }
 
-.contact__icon {
+.icon {
    width: 48px;
    height: 48px;
-
    background: var(--color-bg-light);
    display: flex;
    align-items: center;
    justify-content: center;
 }
 
-.contact-form {
+/* FORM */
+
+.form {
    background: var(--bg-light);
    padding: 40px;
    border: 1px solid var(--color-border);
@@ -55,14 +55,14 @@
    height: 100%;
 }
 
-.contact-form__row {
+.row {
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 24px;
    margin-bottom: 24px;
 }
 
-.contact-form__field {
+.field {
    display: flex;
    flex-direction: column;
    gap: 8px;
@@ -70,13 +70,13 @@
    margin-bottom: 32px;
 }
 
-.contact-form__field label {
+.field label {
    font-size: 14px;
    font-weight: 500;
 }
 
-.contact-form__field input,
-.contact-form__field textarea {
+.field input,
+.field textarea {
    padding: 14px 16px;
    background: #e5e5e5;
    border-radius: 8px;
@@ -84,12 +84,12 @@
    font-family: inherit;
 }
 
-.contact-form__field textarea {
+.field textarea {
    resize: none;
    padding-bottom: 32px;
 }
 
-.contact-form__counter {
+.counter {
    position: absolute;
    right: 0;
    bottom: -22px;
@@ -97,7 +97,7 @@
    color: var(--color-text-muted);
 }
 
-.contact-form__btn {
+.btn {
    width: 100%;
    margin-top: auto;
 }

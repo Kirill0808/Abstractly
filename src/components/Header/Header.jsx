@@ -1,17 +1,17 @@
-import './Header.css';
 import logo from '../../assets/img/logo.png';
 import Button from '../Button/Button';
+import styles from './Header.module.css';
 
 export default function Header() {
    return (
-      <header className="header">
-         <div className="container header__inner">
-            <a href="#" className="logo">
+      <header className={styles.header}>
+         <div className={`container ${styles.inner}`}>
+            <a href="#" className={styles.logo}>
                <img src={logo} alt="Abstractly logo" />
             </a>
 
-            <nav className="nav">
-               <ul className="nav__list">
+            <nav className={styles.nav}>
+               <ul className={styles.navList}>
                   <li>
                      <a href="#">Home</a>
                   </li>
@@ -30,7 +30,7 @@ export default function Header() {
                </ul>
             </nav>
 
-            <div className="header__actions">
+            <div className={styles.actions}>
                <Button variant="secondary">Learn more</Button>
                <Button variant="primary">See pricing</Button>
             </div>

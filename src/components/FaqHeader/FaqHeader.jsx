@@ -1,6 +1,5 @@
 import SectionLayout from '../layout/SectionLayout';
 import FaqList from '../FaqList/FaqList';
-import './FaqHeader.css';
 
 export default function FaqHeader() {
    return (

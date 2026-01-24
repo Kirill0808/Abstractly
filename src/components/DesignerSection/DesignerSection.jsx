@@ -1,5 +1,5 @@
 import SectionLayout from '../layout/SectionLayout';
-import './DesignerSection.css';
+import styles from './DesignerSection.module.css';
 
 const DesignerSection = ({
    className,
@@ -12,10 +12,14 @@ const DesignerSection = ({
 }) => {
    return (
       <SectionLayout className={className} topText={topText} title={title} subtitle={subtitle}>
-         <div className={`designer__content designer__content--${imagePosition}`}>
-            <div className="designer__body">{children}</div>
+         <div
+            className={`${styles.content} ${
+               imagePosition === 'right' ? styles.right : styles.left
+            }`}
+         >
+            <div className={styles.body}>{children}</div>
 
-            <div className="designer__image">
+            <div className={styles.image}>
                <img src={image} alt="" />
             </div>
          </div>

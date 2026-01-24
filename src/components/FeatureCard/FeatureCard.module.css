@@ -1,0 +1,28 @@
+.card {
+   display: flex;
+   gap: 26px;
+   align-items: flex-start;
+}
+
+.icon {
+   width: 48px;
+   height: 48px;
+   flex-shrink: 0;
+}
+
+.content {
+   display: flex;
+   flex-direction: column;
+}
+
+.title {
+   font-size: 18px;
+   font-weight: 700;
+   margin-bottom: 8px;
+   line-height: 1.4;
+}
+
+.text {
+   color: var(--color-muted);
+   line-height: 1.6;
+}

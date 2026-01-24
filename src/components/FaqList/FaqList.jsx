@@ -1,5 +1,5 @@
 import FaqItem from './FaqItem';
-import './FaqList.css';
+import styles from './FaqList.module.css';
 import Button from '../Button/Button';
 
 const faqData = [
@@ -42,14 +42,14 @@ const faqData = [
 
 export default function FaqList() {
    return (
-      <div className="faq__content">
-         <ul className="faq__list">
+      <div className={styles.content}>
+         <ul className={styles.list}>
             {faqData.map((item) => (
                <FaqItem key={item.id} question={item.question} answer={item.answer} />
             ))}
          </ul>
 
-         <div className="faq__cta">
+         <div className={styles.cta}>
             <div>
                <h3>Can’t find the answer you’re looking for?</h3>
                <p>
@@ -57,7 +57,7 @@ export default function FaqList() {
                </p>
             </div>
 
-            <Button variant="primary" as="a" href="#">
+            <Button variant="primary" href="#">
                Get in touch
             </Button>
          </div>

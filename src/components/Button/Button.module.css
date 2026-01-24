@@ -10,16 +10,16 @@
    border: 1px solid transparent;
 }
 
-.btn--primary {
+.primary {
    background-color: var(--color-primary);
    color: var(--bg-light);
 }
 
-.btn--primary:hover {
+.primary:hover {
    background-color: var(--color-primary-hover);
 }
 
-.btn--secondary {
+.secondary {
    background-color: var(--bg-light);
    border-color: var(--color-border);
    color: var(--color-text);

@@ -1,5 +1,6 @@
 import checkIcon from '../../assets/img/check-fill.png';
 import Button from '../Button/Button';
+import styles from './Pricing.module.css';
 
 export default function PricingCard({
    title,
@@ -11,20 +12,20 @@ export default function PricingCard({
    popular = false,
 }) {
    return (
-      <article className={`pricing-card ${popular ? 'pricing-card--popular' : ''}`}>
-         {popular && <span className="pricing-card__badge">Most Popular</span>}
+      <article className={`${styles.card} ${popular ? styles.popular : ''}`}>
+         {popular && <span className={styles.badge}>Most Popular</span>}
 
-         <h3 className="pricing-card__title">{title}</h3>
-         <p className="pricing-card__desc">{desc}</p>
+         <h3 className={styles.title}>{title}</h3>
+         <p className={styles.desc}>{desc}</p>
 
-         <div className={`pricing-card__price ${popular ? 'pricing-card__price--accent' : ''}`}>
-            <span className="price">{price}</span>
-            <span className="period">{period}</span>
+         <div className={`${styles.price} ${popular ? styles.priceAccent : ''}`}>
+            <span>{price}</span>
+            <span className={styles.period}>{period}</span>
          </div>
 
-         <span className="pricing-card__billing">{billing}</span>
+         <span className={styles.billing}>{billing}</span>
 
-         <ul className="pricing-card__list">
+         <ul className={styles.list}>
             {features.map((item, index) => (
                <li key={index}>
                   <img src={checkIcon} alt="" />
@@ -33,7 +34,7 @@ export default function PricingCard({
             ))}
          </ul>
 
-         <Button variant={popular ? 'primary' : 'secondary'} className="pricing-card__btn">
+         <Button variant={popular ? 'primary' : 'secondary'} className={styles.btn}>
             Buy now
          </Button>
       </article>

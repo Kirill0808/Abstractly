@@ -1,29 +1,27 @@
-import './PricingHeader.css';
+import styles from './PricingHeader.module.css';
 
 export default function PricingHeader({ billingPeriod, onChange }) {
    return (
-      <div className="designers__header">
-         <span className="designers__label">Pricing Tiers</span>
-         <h2 className="designers__title">Fit for all your needs</h2>
-         <p className="designers__text">
+      <div className={styles.header}>
+         <span className={styles.label}>Pricing Tiers</span>
+
+         <h2 className={styles.title}>Fit for all your needs</h2>
+
+         <p className={styles.text}>
             Pick the plan that suits you today and step up as your demands grow – our flexible
             options have your journey mapped out.
          </p>
 
-         <div className="toggle">
+         <div className={styles.toggle}>
             <button
-               className={`btn btn--toggle ${
-                  billingPeriod === 'monthly' ? 'btn--toggle-active' : ''
-               }`}
+               className={`${styles.toggleBtn} ${billingPeriod === 'monthly' ? styles.active : ''}`}
                onClick={() => onChange('monthly')}
             >
                Monthly
             </button>
 
             <button
-               className={`btn btn--toggle ${
-                  billingPeriod === 'yearly' ? 'btn--toggle-active' : ''
-               }`}
+               className={`${styles.toggleBtn} ${billingPeriod === 'yearly' ? styles.active : ''}`}
                onClick={() => onChange('yearly')}
             >
                Yearly

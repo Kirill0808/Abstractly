@@ -10,7 +10,7 @@ import Logo6 from '../../assets/img/logo-6.png';
 import Logo7 from '../../assets/img/logo-7.png';
 import Logo8 from '../../assets/img/logo-8.png';
 
-import './Brands.css';
+import styles from './Brands.module.css';
 
 const brands = [
    { img: Logo2, alt: 'Wan Nain' },
@@ -25,11 +25,16 @@ const brands = [
 
 const Brands = () => {
    return (
-      <SectionLayout className="brands" title="Used by teams that you love" withContainer={false}>
+      <SectionLayout
+         className={styles.brands}
+         title="Used by teams that you love"
+         titleSize="small"
+         withContainer={false}
+      >
          <Marquee speed={40} pauseOnHover gradient={false}>
             {brands.map((brand, index) => (
-               <div className="brands__item" key={index}>
-                  <img src={brand.img} alt={brand.alt} />
+               <div className={styles.item} key={index}>
+                  <img className={styles.logo} src={brand.img} alt={brand.alt} />
                </div>
             ))}
          </Marquee>

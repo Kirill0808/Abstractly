@@ -1,10 +1,9 @@
-/* HEADER */
 .header {
    background: var(--bg-light);
    border-bottom: 1px solid var(--color-border);
 }
 
-.header__inner {
+.inner {
    height: 72px;
    display: flex;
    align-items: center;
@@ -15,21 +14,22 @@
    height: 32px;
 }
 
-.nav__list {
+.navList {
    display: flex;
    gap: 32px;
 }
 
-.nav__list a {
+.navList a {
    font-size: 14px;
    color: var(--color-muted);
+   transition: color 0.2s ease;
 }
 
-.nav__list a:hover {
+.navList a:hover {
    color: var(--color-text);
 }
 
-.header__actions {
+.actions {
    display: flex;
    gap: 12px;
 }
