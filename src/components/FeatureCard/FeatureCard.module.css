@@ -1,14 +1,33 @@
 .card {
    display: flex;
-   gap: 26px;
-   align-items: flex-start;
+   gap: 16px;
 }
 
-.icon {
+/* ===== ROW (Designer / Designers) ===== */
+.row {
+   flex-direction: row;
+   align-items: flex-start;
+   text-align: left;
+}
+
+.row .icon {
    width: 48px;
    height: 48px;
    flex-shrink: 0;
 }
+
+/* ===== CENTER (Features) ===== */
+.center {
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.center .icon {
+   margin-bottom: 24px;
+}
+
+/* ===== COMMON ===== */
 
 .content {
    display: flex;

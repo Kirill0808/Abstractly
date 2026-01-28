@@ -1,8 +1,8 @@
 import styles from './FeatureCard.module.css';
 
-export default function FeatureCard({ icon, title, text }) {
+export default function FeatureCard({ icon, title, text, variant = 'row' }) {
    return (
-      <li className={styles.card}>
+      <li className={`${styles.card} ${styles[variant]}`}>
          <img src={icon} alt="" className={styles.icon} />
 
          <div className={styles.content}>
