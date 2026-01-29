@@ -7,10 +7,10 @@ export default function PricingSection() {
    const [billingPeriod, setBillingPeriod] = useState('monthly');
 
    return (
-      <>
+      <section>
          <PricingHeader billingPeriod={billingPeriod} onChange={setBillingPeriod} />
 
          <Pricing billingPeriod={billingPeriod} />
-      </>
+      </section>
    );
 }

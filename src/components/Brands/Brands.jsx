@@ -1,6 +1,6 @@
 import Marquee from 'react-fast-marquee';
 import SectionLayout from '../layout/SectionLayout';
-import { BRANDS } from './brands.data';
+import { BRANDS } from './constants';
 import styles from './Brands.module.css';
 
 const Brands = () => {
