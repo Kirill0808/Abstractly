@@ -1,0 +1,35 @@
+.header {
+   background: var(--bg-light);
+   border-bottom: 1px solid var(--color-border);
+}
+
+.inner {
+   height: 72px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.logo img {
+   height: 32px;
+}
+
+.navList {
+   display: flex;
+   gap: 32px;
+}
+
+.navList a {
+   font-size: 14px;
+   color: var(--color-muted);
+   transition: color 0.2s ease;
+}
+
+.navList a:hover {
+   color: var(--color-text);
+}
+
+.actions {
+   display: flex;
+   gap: 12px;
+}
